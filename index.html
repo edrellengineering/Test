@@ -2,12 +2,74 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Min hemsida</title>
+  <title>Min Företagssida</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Innehåll på vänster sida */
+    .content {
+      padding: 50px;
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Logotyp längs högersidan */
+    .logo-side {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%) rotate(90deg);
+      transform-origin: top right;
+      max-height: 300px;
+      z-index: 10;
+    }
+
+    .logo-side img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Responsivt */
+    @media (max-width: 768px) {
+      .logo-side {
+        display: none; /* Dölj logotyp på små skärmar */
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Välkommen!</h1>
-  <p>Detta är min första hemsida via GitHub Pages.</p>
-  <h2>Test</h2>
-  <p>Här testar jag saker innan sidan blir klar.</p>
+
+  <div class="content">
+    <h1>Välkommen till vårt företag!</h1>
+    <p>
+      Detta är vår testhemsida på GitHub Pages. Här kan vi visa upp våra tjänster, produkter och kontaktinformation.
+    </p>
+    <p>
+      Vi kommer fylla på med mer innehåll och bilder senare. Testa att redigera direkt via GitHub och se ändringarna live!
+    </p>
+  </div>
+
+  <div class="logo-side">
+    <img src="logotyp01.jpg" alt="Logotyp">
+  </div>
+
 </body>
 </html>
