@@ -62,29 +62,35 @@
     }
 
     /* ===== FOCUS AREAS ===== */
-    .cards {
-      display: grid;
-      gap: 12px;
-      margin-top: 15px;
-    }
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  background: #f7f7f7;
+  border-left: 3px solid #111;
+}
 
-    .card {
-      padding: 16px 18px;
-      background: #f7f7f7;
-      border-left: 3px solid #111;
-    }
+.card-text {
+  max-width: 85%;
+}
 
-    .card h3 {
-      margin: 0 0 5px 0;
-      font-size: 15.5px;
-    }
+.card-icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
 
-    .card p {
-      margin: 0;
-      font-size: 14.5px;
-      color: #444;
-    }
+.card h3 {
+  margin: 0 0 5px 0;
+  font-size: 15.5px;
+}
 
+.card p {
+  margin: 0;
+  font-size: 14.5px;
+  color: #444;
+}
     /* ===== LINKEDIN ===== */
     .linkedin {
       margin-top: 10px;
@@ -114,7 +120,7 @@
       Teknik · Kommunikation · Kvalitet · Effektivitet
     </div>
     <p style="max-width:600px; margin: 20px auto 0 auto; color:#444; font-size:15px; line-height:1.6;">
-Konsult inom kvalitet, processer och projektledning med erfarenhet från tekniska utvecklingsmiljöer och verksamhetsförbättring.
+Konsult inom kvalitet, processer och projektledning med erfarenhet från tekniska utveckling och verksamhetsförbättring.
 </p>
   </div>
 
@@ -137,18 +143,27 @@ Konsult inom kvalitet, processer och projektledning med erfarenhet från teknisk
 <div class="cards">
 
   <div class="card">
-    <h3>Teknik & Konstruktion</h3>
-    <p>Mekanikkonstruktion och produktutveckling i tekniska miljöer.</p>
+    <div class="card-text">
+      <h3>Teknik & Konstruktion</h3>
+      <p>Mekanikkonstruktion och produktutveckling i industriella miljöer.</p>
+    </div>
+    <div class="card-icon">⚙️</div>
   </div>
 
   <div class="card">
-    <h3>Projekt & Ledning</h3>
-    <p>Projektledning, koordinering och ansvar i tvärfunktionella team.</p>
+    <div class="card-text">
+      <h3>Projektledning</h3>
+      <p>Genomförande av projekt från start till leverans i tvärfunktionella team.</p>
+    </div>
+    <div class="card-icon">📊</div>
   </div>
 
   <div class="card">
-    <h3>Kvalitet & Process</h3>
-    <p>Verksamhetsutveckling, förbättringsarbete och strukturerade arbetssätt.</p>
+    <div class="card-text">
+      <h3>Kvalitet & Process</h3>
+      <p>Förbättring av arbetssätt, struktur och verksamhetens effektivitet.</p>
+    </div>
+    <div class="card-icon">✓</div>
   </div>
 
 </div>
