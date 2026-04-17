@@ -3,66 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>Edrell Engineering AB</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      display: flex;
-      min-height: 100vh;
-      position: relative;
+      background: #ffffff;
+      color: #222;
     }
 
-    /* Innehåll på vänster sida */
-    .content {
-      padding: 50px;
-      flex: 1;
+    /* Huvudinnehåll */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
     }
 
-    .content h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    .content p {
-      font-size: 18px;
+    h2 {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    p {
       line-height: 1.6;
+      font-size: 16px;
     }
 
-    /* Logotyp längs högersidan */
-.logo-side {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-}
+    /* Logga på sidan */
+    .logo-side {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
 
-.logo-side img {
-  height: 120px;
-  transform: rotate(90deg);
-}
+    .logo-side img {
+      height: 120px;
+      transform: rotate(90deg);
+    }
 
-    /* Responsivt */
+    /* Mobil */
     @media (max-width: 768px) {
       .logo-side {
-        display: none; /* Dölj logotyp på små skärmar */
+        display: none;
       }
     }
   </style>
 </head>
-<body>
 
-  <div class="content">
-    <h1>Välkommen till Jennifer Friberg Edrells sida!</h1>
-    <p>
-      Detta är min testhemsida. Här ska jag visa upp mina tjänster, produkter och kontaktinformation.
-    </p>
-  
-  </div>
+<body>
 
   <div class="logo-side">
     <img src="logotype01.jpg" alt="Logotyp">
+  </div>
+
+  <div class="container">
+
+    <h1>Edrell Engineering AB</h1>
+    <p><strong>Teknisk konsultation och ingenjörstjänster</strong></p>
+
+    <h2>Om oss</h2>
+    <p>
+      Här beskriver du företaget kort. Vad ni gör, vilken typ av ingenjörstjänster,
+      och vilket värde ni skapar för kunder.
+    </p>
+
+    <h2>Tjänster</h2>
+    <p>
+      • Teknisk rådgivning<br>
+      • Konstruktion / utveckling<br>
+      • Projektstöd<br>
+      • Annan specialkompetens
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      E-post: info@dindomän.com<br>
+      Telefon: +46 XX XXX XX XX
+    </p>
+
   </div>
 
 </body>
