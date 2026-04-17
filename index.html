@@ -12,35 +12,35 @@
       color: #1a1a1a;
     }
 
+    /* ===== PREMIUM HEADER ===== */
+    .hero {
+      text-align: center;
+      padding: 70px 20px 40px 20px;
+    }
+
+    .hero img {
+      height: 80px;
+      max-width: 90%;
+    }
+
+    .tagline {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #555;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== CONTENT ===== */
     .container {
       max-width: 850px;
       margin: 0 auto;
-      padding: 80px 20px;
-    }
-.contact-box {
-  margin-top: 10px;
-  padding: 18px 20px;
-  background: #f6f6f6;
-  border-left: 4px solid #111;
-}
-    h1 {
-      font-size: 44px;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .intro {
-      font-size: 18px;
-      color: #444;
-      margin-bottom: 50px;
-      line-height: 1.6;
+      padding: 20px 20px 80px 20px;
     }
 
     h2 {
-      font-size: 20px;
       margin-top: 50px;
-      margin-bottom: 10px;
-      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 0.2px;
     }
 
     p {
@@ -49,6 +49,7 @@
       color: #333;
     }
 
+    /* ===== KÄRNVÄRDEN ===== */
     .values {
       margin-top: 15px;
       padding: 18px 20px;
@@ -59,11 +60,11 @@
       display: inline-block;
     }
 
-    /* Logotyp */
+    /* ===== LOGO SIDOPANEL ===== */
     .logo-side {
       position: fixed;
       top: 50%;
-      right: -80px;
+      right: 20px;
       transform: translateY(-50%);
     }
 
@@ -72,14 +73,14 @@
       transform: rotate(90deg);
     }
 
-    /* Mobil */
+    /* ===== MOBIL ===== */
     @media (max-width: 768px) {
       .logo-side {
         display: none;
       }
 
-      .container {
-        padding: 50px 20px;
+      .hero {
+        padding: 50px 15px 20px 15px;
       }
     }
   </style>
@@ -87,59 +88,77 @@
 
 <body>
 
+  <!-- SIDOPANEL LOGGA -->
   <div class="logo-side">
     <img src="logotype01.jpg" alt="Logotyp">
   </div>
 
+  <!-- HEADER -->
+  <div class="hero">
+    <img src="logotype01.jpg" alt="Edrell Engineering AB">
+    <div class="tagline">
+      Kvalitet · Process · Projektledning · Verksamhetsutveckling
+    </div>
+  </div>
+
+  <!-- INNEHÅLL -->
   <div class="container">
 
-    <h1>Edrell Engineering AB</h1>
+    <h2>Om oss</h2>
 
-    <div class="intro">
-      Konsultverksamhet inom mekanikkonstruktion, projektledning
-      och verksamhetsutveckling med fokus på kvalitet, processer och förbättringsarbete.
-    </div>
-
-    <h2>Om mig</h2>
     <p>
-      Jag är en erfaren projektledare och koordinator med bakgrund inom mekanik,
-      produktutveckling, produktvård, inköpskvalitet och industrialisering.
+      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektutveckling,
+      projektledning och verksamhetsutveckling.
     </p>
 
     <p>
-      Genom arbete i komplexa utvecklingsprojekt, bland annat inom försvarsindustrin,
-      har jag tagit ansvar för produkter, projekt och tvärfunktionella team med fokus
-      på helhet, kvalitet och leverans.
+      Fokus ligger på att utveckla och förbättra tekniska och organisatoriska arbetssätt,
+      med särskild inriktning mot kvalitet, processer och effektiva flöden.
     </p>
 
     <p>
-      Jag arbetar i gränslandet mellan teknik, struktur och ledarskap och drivs av
-      att skapa tydlighet, effektivitet och förbättrade arbetssätt.
+      Målsättningen är att bidra i förändrings- och utvecklingsarbete där struktur, tydlighet
+      och genomförande står i centrum.
     </p>
 
-    <h2>Fokusområden</h2>
     <p>
-      Kvalitet, processutveckling, verksamhetsutveckling, förändringsledning och projektledning.
+      Ambitionen är att utvecklas mot roller inom kvalitet, processutveckling,
+      verksamhetsutveckling, förändringsledning och projektledning.
     </p>
 
     <h2>Kärnvärden</h2>
+
     <div class="values">
-      Teknik · Utveckling · Kommunikation · Kvalitet · Effektivitet 
+      Coaching · Utveckling · Samarbete · Kvalitet · Effektivitet · Struktur
     </div>
 
+    <h2>Information</h2>
+
+    <p>
+      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektutveckling, projektledning och verksamhetsutveckling.
+      Fokus ligger på att utveckla och förbättra tekniska och organisatoriska arbetssätt, med särskild inriktning mot kvalitet, processer och effektiva flöden. Målsättningen är att bidra som en drivande kraft i förändrings- och utvecklingsarbete där struktur, tydlighet och genomförande står i centrum.
+      Bakgrunden finns inom mekanik, produktutveckling, produktvård, inköpskvalitet och industrialisering, med erfarenhet från komplexa utvecklingsprojekt inom bland annat försvarsindustrin. I dessa miljöer har ansvar tagits för produkter, projekt och tvärfunktionella samarbeten med fokus på helhet, kvalitet och leveranssäkerhet.
+      Ambitionen är att utvecklas mot roller inom kvalitet, processutveckling, verksamhetsutveckling, förändringsledning och projektledning, där teknik, struktur och ledarskap kombineras för att skapa långsiktiga förbättringar.
+      Arbetssättet präglas av en prestigelös och lösningsorienterad inställning, med fokus på att få människor, processer och teknik att samverka mot gemensamma mål och mätbara resultat.
+    </p>
+
+    <h2>Tjänster</h2>
+
+    <p>
+      • Teknisk rådgivning<br>
+      • Konstruktion / utveckling<br>
+      • Projektstöd<br>
+      • Annan specialkompetens
+    </p>
+
+    <h2>Kontakt</h2>
+
+    <p>
+      E-post: info@dindomän.com<br>
+      Telefon: +46 XX XXX XX XX
+    </p>
+
   </div>
-<h2>Kontakt</h2>
 
-<div class="contact-box">
-  <p>
-    Kontakta mig gärna för samarbeten eller uppdrag inom mekanikkonstruktion,
-    projektledning och verksamhetsutveckling.
-  </p>
-
-  <p>
-    <strong>E-post:</strong> jennifer@edrellengineering.com<br>
-    <strong>Telefon:</strong> +46 73 95 20 516
-  </p>
-</div>
 </body>
 </html>
