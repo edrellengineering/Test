@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <title>Edrell Engineering AB</title>
 
+  <!-- Modernare font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', Arial, sans-serif;
       background: #ffffff;
       color: #1a1a1a;
     }
@@ -15,7 +20,7 @@
     /* ===== HEADER ===== */
     .hero {
       text-align: center;
-      padding: 70px 20px 30px 20px;
+      padding: 70px 20px 25px 20px;
     }
 
     .hero img {
@@ -23,81 +28,88 @@
     }
 
     .tagline {
-      margin-top: 15px;
-      font-size: 16px;
+      margin-top: 12px;
+      font-size: 15px;
       color: #555;
       letter-spacing: 0.3px;
     }
 
     /* ===== CONTENT ===== */
     .container {
-      max-width: 850px;
+      max-width: 820px;
       margin: 0 auto;
-      padding: 20px 20px 80px 20px;
+      padding: 10px 20px 80px 20px;
     }
 
     h2 {
-      margin-top: 50px;
-      font-size: 20px;
+      margin-top: 55px;
+      font-size: 18px;
+      font-weight: 600;
     }
 
     p {
-      font-size: 16px;
-      line-height: 1.7;
+      font-size: 15.5px;
+      line-height: 1.75;
       color: #333;
+      margin-bottom: 14px;
     }
 
-    /* ===== FOCUS CARDS ===== */
+    /* ===== SEPARATOR ===== */
+    .divider {
+      height: 1px;
+      background: #e9e9e9;
+      margin: 35px 0;
+    }
+
+    /* ===== FOCUS AREAS ===== */
     .cards {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 15px;
-      margin-top: 10px;
+      gap: 12px;
+      margin-top: 15px;
     }
 
     .card {
-      display: flex;
-      gap: 15px;
-      padding: 18px 20px;
-      background: #f6f6f6;
-      border-left: 4px solid #111;
-      align-items: flex-start;
-    }
-
-    .icon {
-      width: 28px;
-      height: 28px;
-      flex-shrink: 0;
-      margin-top: 2px;
+      padding: 16px 18px;
+      background: #f7f7f7;
+      border-left: 3px solid #111;
     }
 
     .card h3 {
       margin: 0 0 5px 0;
-      font-size: 16px;
+      font-size: 15.5px;
     }
 
     .card p {
       margin: 0;
-      font-size: 15px;
-      color: #333;
+      font-size: 14.5px;
+      color: #444;
     }
 
-
-
-      .hero {
-        padding: 50px 15px 20px 15px;
-      }
+    /* ===== LINKEDIN ===== */
+    .linkedin {
+      margin-top: 10px;
+      font-size: 14px;
     }
+
+    .linkedin a {
+      color: #0a66c2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .linkedin a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 
 <body>
 
-
-
   <!-- HEADER -->
   <div class="hero">
     <img src="logotype01.jpg" alt="Edrell Engineering AB">
+
     <div class="tagline">
       Teknik · Kommunikation · Kvalitet · Effektivitet
     </div>
@@ -108,80 +120,37 @@
     <h2>Om oss</h2>
 
     <p>
-      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektutveckling,
-      projektledning och verksamhetsutveckling.
+      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektledning och verksamhetsutveckling.
     </p>
 
     <p>
-      Fokus ligger på att utveckla och förbättra tekniska och organisatoriska arbetssätt,
-      med särskild inriktning mot kvalitet, processer och effektiva flöden.
+      Fokus ligger på kvalitet, processer och effektiva arbetssätt i tekniska miljöer.
     </p>
 
-    <p>
-      Målsättningen är att bidra i förändrings- och utvecklingsarbete där struktur, tydlighet
-      och genomförande står i centrum.
-    </p>
-
-    <p>
-      Ambitionen är att utvecklas mot roller inom kvalitet, processutveckling,
-      verksamhetsutveckling, förändringsledning och projektledning.
-    </p>
+    <div class="divider"></div>
 
     <h2>Kompetensområden</h2>
 
     <div class="cards">
 
       <div class="card">
-        <!-- kugghjul -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
-          <circle cx="12" cy="12" r="3"></circle>
-          <path d="M19.4 15a1.7 1.7 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.82-.33 1.7 1.7 0 0 0-1 1.54V21a2 2 0 0 1-4 0v-.09a1.7 1.7 0 0 0-1-1.54 1.7 1.7 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .33-1.82 1.7 1.7 0 0 0-1.54-1H3a2 2 0 0 1 0-4h.09a1.7 1.7 0 0 0 1.54-1 1.7 1.7 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.82.33h.01A1.7 1.7 0 0 0 9 3.09V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.54 1.7 1.7 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.33 1.82v.01A1.7 1.7 0 0 0 20.91 11H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/>
-        </svg>
-        <div>
-          <h3>Teknik & Konstruktion</h3>
-          <p>Mekanikkonstruktion, produktutveckling och teknisk problemlösning.</p>
-        </div>
+        <h3>Teknik & Konstruktion</h3>
+        <p>Mekanikkonstruktion och produktutveckling.</p>
       </div>
 
       <div class="card">
-        <!-- projekt -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
-          <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
-        </svg>
-        <div>
-          <h3>Projekt & Ledning</h3>
-          <p>Projektledning, koordinering och tvärfunktionellt arbete i komplexa miljöer.</p>
-        </div>
+        <h3>Projektledning</h3>
+        <p>Projektledning och koordinering i komplexa miljöer.</p>
       </div>
 
       <div class="card">
-        <!-- check -->
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
-          <path d="M20 6L9 17l-5-5"/>
-        </svg>
-        <div>
-          <h3>Kvalitet & Process</h3>
-          <p>Verksamhetsutveckling, kvalitetssäkring och förbättring av arbetssätt.</p>
-        </div>
+        <h3>Kvalitet & Process</h3>
+        <p>Verksamhetsutveckling och förbättringsarbete.</p>
       </div>
 
     </div>
 
-    <h2>Information</h2>
-
-    <p>
-      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektutveckling, projektledning och verksamhetsutveckling.
-      Fokus ligger på att utveckla och förbättra tekniska och organisatoriska arbetssätt, med särskild inriktning mot kvalitet, processer och effektiva flöden. Målsättningen är att bidra som en drivande kraft i förändrings- och utvecklingsarbete där struktur, tydlighet och genomförande står i centrum.
-    </p>
-
-    <h2>Tjänster</h2>
-
-    <p>
-      • Teknisk rådgivning<br>
-      • Konstruktion / utveckling<br>
-      • Projektstöd<br>
-      • Annan specialkompetens
-    </p>
+    <div class="divider"></div>
 
     <h2>Kontakt</h2>
 
@@ -189,6 +158,13 @@
       E-post: jennifer@edrellengineering.com<br>
       Telefon: +46 73 952 05 16
     </p>
+
+    <div class="linkedin">
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/jennifer-friberg-edrell-a83563b6/" target="_blank">
+        Min profil
+      </a>
+    </div>
 
   </div>
 
