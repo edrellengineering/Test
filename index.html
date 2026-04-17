@@ -12,15 +12,14 @@
       color: #1a1a1a;
     }
 
-    /* ===== PREMIUM HEADER ===== */
+    /* ===== HEADER ===== */
     .hero {
       text-align: center;
-      padding: 70px 20px 40px 20px;
+      padding: 70px 20px 30px 20px;
     }
 
     .hero img {
       height: 80px;
-      max-width: 90%;
     }
 
     .tagline {
@@ -40,7 +39,6 @@
     h2 {
       margin-top: 50px;
       font-size: 20px;
-      letter-spacing: 0.2px;
     }
 
     p {
@@ -49,18 +47,59 @@
       color: #333;
     }
 
-    /* ===== KÄRNVÄRDEN ===== */
-    .values {
-      margin-top: 15px;
-      padding: 18px 20px;
-      border-left: 4px solid #111;
-      background: #f6f6f6;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      display: inline-block;
+    /* ===== FOCUS CARDS ===== */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-top: 10px;
     }
 
+    .card {
+      display: flex;
+      gap: 15px;
+      padding: 18px 20px;
+      background: #f6f6f6;
+      border-left: 4px solid #111;
+      align-items: flex-start;
+    }
 
+    .icon {
+      width: 28px;
+      height: 28px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .card h3 {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      color: #333;
+    }
+
+    /* ===== LOGO SIDEPANEL ===== */
+    .logo-side {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    .logo-side img {
+      height: 110px;
+      transform: rotate(90deg);
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 768px) {
+      .logo-side {
+        display: none;
+      }
 
       .hero {
         padding: 50px 15px 20px 15px;
@@ -71,23 +110,26 @@
 
 <body>
 
-
+  <!-- SIDEPANEL LOGGA -->
+  <div class="logo-side">
+    <img src="logotype01.jpg" alt="Logotyp">
+  </div>
 
   <!-- HEADER -->
   <div class="hero">
     <img src="logotype01.jpg" alt="Edrell Engineering AB">
     <div class="tagline">
-      Kvalitet · Process · Projektledning · Verksamhetsutveckling
+      Teknik · Kommunikation · Kvalitet · Effektivitet
     </div>
   </div>
 
-  <!-- INNEHÅLL -->
   <div class="container">
 
     <h2>Om oss</h2>
 
     <p>
-      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektledning och verksamhetsutveckling.
+      Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektutveckling,
+      projektledning och verksamhetsutveckling.
     </p>
 
     <p>
@@ -101,14 +143,48 @@
     </p>
 
     <p>
-      Ambitionen är att utvecklas mot roller inom processutveckling,
+      Ambitionen är att utvecklas mot roller inom kvalitet, processutveckling,
       verksamhetsutveckling, förändringsledning och projektledning.
     </p>
 
-    <h2>Kärnvärden</h2>
+    <h2>Fokusområden</h2>
 
-    <div class="values">
-      Teknik · Kommunikation · Kvalitet · Effektivitet  
+    <div class="cards">
+
+      <div class="card">
+        <!-- kugghjul -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.7 1.7 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.82-.33 1.7 1.7 0 0 0-1 1.54V21a2 2 0 0 1-4 0v-.09a1.7 1.7 0 0 0-1-1.54 1.7 1.7 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.7 1.7 0 0 0 .33-1.82 1.7 1.7 0 0 0-1.54-1H3a2 2 0 0 1 0-4h.09a1.7 1.7 0 0 0 1.54-1 1.7 1.7 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.7 1.7 0 0 0 1.82.33h.01A1.7 1.7 0 0 0 9 3.09V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.54 1.7 1.7 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.7 1.7 0 0 0-.33 1.82v.01A1.7 1.7 0 0 0 20.91 11H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/>
+        </svg>
+        <div>
+          <h3>Teknik & Konstruktion</h3>
+          <p>Mekanikkonstruktion, produktutveckling och teknisk problemlösning.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- projekt -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+          <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+        </svg>
+        <div>
+          <h3>Projekt & Ledning</h3>
+          <p>Projektledning, koordinering och tvärfunktionellt arbete i komplexa miljöer.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- check -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>
+          <h3>Kvalitet & Process</h3>
+          <p>Verksamhetsutveckling, kvalitetssäkring och förbättring av arbetssätt.</p>
+        </div>
+      </div>
+
     </div>
 
     <h2>Information</h2>
@@ -116,9 +192,6 @@
     <p>
       Edrell Engineering AB erbjuder konsulttjänster inom mekanikkonstruktion, projektutveckling, projektledning och verksamhetsutveckling.
       Fokus ligger på att utveckla och förbättra tekniska och organisatoriska arbetssätt, med särskild inriktning mot kvalitet, processer och effektiva flöden. Målsättningen är att bidra som en drivande kraft i förändrings- och utvecklingsarbete där struktur, tydlighet och genomförande står i centrum.
-      Bakgrunden finns inom mekanik, produktutveckling, produktvård, inköpskvalitet och industrialisering, med erfarenhet från komplexa utvecklingsprojekt inom bland annat försvarsindustrin. I dessa miljöer har ansvar tagits för produkter, projekt och tvärfunktionella samarbeten med fokus på helhet, kvalitet och leveranssäkerhet.
-      Ambitionen är att utvecklas mot roller inom kvalitet, processutveckling, verksamhetsutveckling, förändringsledning och projektledning, där teknik, struktur och ledarskap kombineras för att skapa långsiktiga förbättringar.
-      Arbetssättet präglas av en prestigelös och lösningsorienterad inställning, med fokus på att få människor, processer och teknik att samverka mot gemensamma mål och mätbara resultat.
     </p>
 
     <h2>Tjänster</h2>
