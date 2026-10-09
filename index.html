@@ -3,29 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Edrell Engineering AB</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;g:0;
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
 box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
 font-family:'Inter',sans-serif;
-color:#333;
 background:#ffffff;
+color:#333;
 }
+
+/* HEADER */
 
 header{
 background:#ffffff;
-border-bottom:1px solid #efefef;
+border-bottom:1px solid #eeeeee;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .navbar{
 max-width:1200px;
 margin:auto;
-padding:22px 40px;
+padding:18px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -37,24 +53,26 @@ height:70px;
 
 .menu a{
 text-decoration:none;
-color:#666;
+color:#555;
 margin-left:30px;
 font-size:14px;
 font-weight:500;
 }
 
+/* HERO */
+
 .hero{
-min-height:700px;
+min-height:720px;
 
 background:
 linear-gradient(
-rgba(233,220,230,0.35),
-rgba(120,100,160,0.25)
+rgba(240,228,235,0.35),
+rgba(125,105,160,0.25)
 ),
 url("hero.jpg");
 
 background-size:cover;
-background-position:center right;
+background-position:center;
 
 display:flex;
 align-items:center;
@@ -68,20 +86,20 @@ padding:80px 40px;
 }
 
 .hero-label{
-letter-spacing:3px;
 font-size:12px;
-color:#7d6e96;
-margin-bottom:20px;
+letter-spacing:3px;
 text-transform:uppercase;
+color:#8f7aa9;
+margin-bottom:20px;
 }
 
 .hero h1{
-font-size:72px;
+font-size:78px;
 font-weight:300;
 line-height:1.05;
-max-width:650px;
-color:#2d2d2d;
+color:#2f2f2f;
 margin-bottom:25px;
+max-width:700px;
 }
 
 .hero p{
@@ -94,13 +112,15 @@ margin-bottom:35px;
 
 .button{
 display:inline-block;
-padding:16px 32px;
 background:#1f2840;
-color:white;
+color:#ffffff;
 text-decoration:none;
+padding:16px 30px;
 font-size:14px;
 letter-spacing:1px;
 }
+
+/* SERVICES */
 
 .services{
 padding:90px 40px;
@@ -118,25 +138,21 @@ gap:40px;
 .service{
 text-align:center;
 padding:20px;
-border-right:1px solid #ececec;
-}
-
-.service:last-child{
-border-right:none;
 }
 
 .service h3{
 font-size:13px;
 letter-spacing:2px;
 margin-bottom:15px;
-color:#6f5b8c;
+color:#7d669f;
 }
 
 .service p{
-font-size:15px;
-line-height:1.7;
 color:#666;
+line-height:1.8;
 }
+
+/* ABOUT */
 
 .about{
 background:#fafafa;
@@ -154,16 +170,16 @@ align-items:center;
 
 .about-image img{
 width:100%;
-border-radius:8px;
-box-shadow:0 10px 40px rgba(0,0,0,0.08);
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
 .section-label{
 font-size:12px;
 letter-spacing:3px;
-color:#8d73b5;
-margin-bottom:15px;
 text-transform:uppercase;
+color:#8b74ad;
+margin-bottom:15px;
 }
 
 .about h2{
@@ -171,23 +187,24 @@ font-size:46px;
 font-weight:300;
 line-height:1.2;
 margin-bottom:25px;
-color:#333;
 }
 
 .about p{
-font-size:18px;
+font-size:17px;
 line-height:1.9;
 color:#555;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .about-button{
 display:inline-block;
-padding:14px 26px;
-border:1px solid #cbbce0;
+padding:14px 24px;
+border:1px solid #d8c8ea;
 text-decoration:none;
-color:#6f5b8c;
+color:#7e66a1;
 }
+
+/* CTA */
 
 .cta{
 background:#1f2840;
@@ -200,7 +217,7 @@ max-width:1200px;
 margin:auto;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:80px;
+gap:60px;
 align-items:center;
 }
 
@@ -217,25 +234,33 @@ margin-bottom:25px;
 
 .cta-button{
 display:inline-block;
-padding:16px 30px;
 background:white;
 color:#1f2840;
 text-decoration:none;
+padding:16px 30px;
 font-weight:600;
 }
 
+/* FOOTER */
+
 footer{
 text-align:center;
-padding:35px;
-font-size:14px;
+padding:30px;
 color:#999;
+font-size:14px;
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
 .navbar{
 flex-direction:column;
-gap:20px;
+gap:15px;
+}
+
+.menu a{
+margin:0 10px;
 }
 
 .hero{
@@ -248,11 +273,6 @@ font-size:48px;
 
 .services-grid{
 grid-template-columns:1fr;
-}
-
-.service{
-border-right:none;
-border-bottom:1px solid #ececec;
 }
 
 .about-grid{
@@ -270,6 +290,7 @@ height:55px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -285,7 +306,7 @@ height:55px;
 <div class="menu">
 #Hem</a>
 <a hrefa>
-<a href="#tjanster">Tjänster</aontakt</a>
+<a href="#tjanster">Tjänster</Kontakt</a>
 </div>
 
 </div>
@@ -297,7 +318,7 @@ height:55px;
 <div class="hero-content">
 
 <div class="hero-label">
-KONSULTTJÄNSTER
+Konsulttjänster
 </div>
 
 <h1>
@@ -308,11 +329,11 @@ Effektivitet.
 </h1>
 
 <p>
-Jag hjälper företag att utveckla arbetssätt, kvalitet och projektledning genom erfarenhet från teknisk utveckling, processförbättring och verksamhetsutveckling.
+Jag hjälper tekniska verksamheter att utveckla kvalitet, processer och projekt genom erfarenhet från industri, förbättringsarbete och verksamhetsutveckling.
 </p>
 
-<a class="button" href="mailto:jennifer@edrellengineering.com">
-KONTAKTA MIG
+<a href="mailto:jennifer@edrellengineering.com" class="button">
+Kontakta mig
 </a>
 
 </div>
@@ -330,7 +351,7 @@ KONTAKTA MIG
 
 <div class="service">
 <h3>KVALITET</h3>
-<p>Strukturerade arbetssätt som skapar stabilitet och trygghet.</p>
+<p>Strukturerade arbetssätt som skapar stabilitet och långsiktighet.</p>
 </div>
 
 <div class="service">
@@ -353,7 +374,7 @@ KONTAKTA MIG
 <div>
 
 <div class="section-label">
-OM MIG
+Om mig
 </div>
 
 <h2>
@@ -361,15 +382,15 @@ Erfarenhet, engagemang och ett lösningsfokuserat arbetssätt.
 </h2>
 
 <p>
-Jag hjälper företag att utveckla kvalitet, processer och projekt genom ett strukturerat arbetssätt, teknisk förståelse och ett starkt fokus på resultat.
+Jag hjälper företag att utveckla kvalitet, processer och projekt genom ett strukturerat arbetssätt, teknisk förståelse och ett tydligt fokus på resultat.
 </p>
 
 <p>
-Målet är att skapa tydlighet, effektivitet och långsiktigt hållbara förbättringar i verksamheten.
+Målet är att skapa långsiktigt hållbara förbättringar som stärker både människor, processer och verksamhet.
 </p>
 
 #kontakt
-LÄS MER OM MIG
+Kontakta mig
 </a>
 
 </div>
@@ -383,9 +404,11 @@ LÄS MER OM MIG
 <div class="cta-content">
 
 <div>
+
 <h2>
 Är du nyfiken på hur jag kan hjälpa din verksamhet?
 </h2>
+
 </div>
 
 <div>
@@ -396,7 +419,7 @@ jennifer@edrellengineering.com<br>
 </p>
 
 <a href="mailto:jennifer@edrellengineering.com" class="cta-button">
-KONTAKTA MIG
+Kontakta mig
 </a>
 
 </div>
