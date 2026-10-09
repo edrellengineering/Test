@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,429 +9,66 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@3000;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:'Inter',sans-serif;
-background:#ffffff;
-color:#333;
+    font-family:'Inter',sans-serif;
+    color:#333;
+    background:#fff;
 }
 
-/* HEADER */
+/* =========================
+   TOPPMENY
+========================= */
 
 header{
-background:#ffffff;
-border-bottom:1px solid #eeeeee;
-position:sticky;
-top:0;
-z-index:999;
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:100;
 }
 
 .navbar{
-max-width:1200px;
-margin:auto;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    max-width:1300px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 60px;
 }
 
 .logo img{
-height:70px;
+    height:38px;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
 }
 
 .menu a{
-text-decoration:none;
-color:#555;
-margin-left:30px;
-font-size:14px;
-font-weight:500;
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
-min-height:720px;
-
-background:
-linear-gradient(
-rgba(240,228,235,0.35),
-rgba(125,105,160,0.25)
-),
-url("hero.jpg");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-align-items:center;
-}
-
-.hero-content{
-max-width:1200px;
-margin:auto;
-width:100%;
-padding:80px 40px;
-}
-
-.hero-label{
-font-size:12px;
-letter-spacing:3px;
-text-transform:uppercase;
-color:#8f7aa9;
-margin-bottom:20px;
-}
-
-.hero h1{
-font-size:78px;
-font-weight:300;
-line-height:1.05;
-color:#2f2f2f;
-margin-bottom:25px;
-max-width:700px;
-}
-
-.hero p{
-max-width:600px;
-font-size:18px;
-line-height:1.8;
-color:#444;
-margin-bottom:35px;
-}
-
-.button{
-display:inline-block;
-background:#1f2840;
-color:#ffffff;
-text-decoration:none;
-padding:16px 30px;
-font-size:14px;
-letter-spacing:1px;
-}
-
-/* SERVICES */
-
-.services{
-padding:90px 40px;
-background:#ffffff;
-}
-
-.services-grid{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-}
-
-.service{
-text-align:center;
-padding:20px;
-}
-
-.service h3{
-font-size:13px;
-letter-spacing:2px;
-margin-bottom:15px;
-color:#7d669f;
-}
-
-.service p{
-color:#666;
-line-height:1.8;
-}
-
-/* ABOUT */
-
-.about{
-background:#fafafa;
-padding:100px 40px;
-}
-
-.about-grid{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:center;
-}
-
-.about-image img{
-width:100%;
-border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
-}
-
-.section-label{
-font-size:12px;
-letter-spacing:3px;
-text-transform:uppercase;
-color:#8b74ad;
-margin-bottom:15px;
-}
-
-.about h2{
-font-size:46px;
-font-weight:300;
-line-height:1.2;
-margin-bottom:25px;
-}
-
-.about p{
-font-size:17px;
-line-height:1.9;
-color:#555;
-margin-bottom:20px;
-}
-
-.about-button{
-display:inline-block;
-padding:14px 24px;
-border:1px solid #d8c8ea;
-text-decoration:none;
-color:#7e66a1;
-}
-
-/* CTA */
-
-.cta{
-background:#1f2840;
-color:white;
-padding:110px 40px;
-}
-
-.cta-content{
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.cta h2{
-font-size:48px;
-font-weight:300;
-line-height:1.2;
-}
-
-.cta p{
-line-height:1.8;
-margin-bottom:25px;
-}
-
-.cta-button{
-display:inline-block;
-background:white;
-color:#1f2840;
-text-decoration:none;
-padding:16px 30px;
-font-weight:600;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:30px;
-color:#999;
-font-size:14px;
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-.navbar{
-flex-direction:column;
-gap:15px;
-}
-
-.menu a{
-margin:0 10px;
-}
-
-.hero{
-min-height:600px;
-}
-
-.hero h1{
-font-size:48px;
-}
-
-.services-grid{
-grid-template-columns:1fr;
-}
-
-.about-grid{
-grid-template-columns:1fr;
-}
-
-.cta-content{
-grid-template-columns:1fr;
-}
-
-.logo img{
-height:55px;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="navbar">
-
-<div class="logo">
-<img src="logotype01.jpg" alt="Edrell Engineering">
-</div>
-
-<div class="menu">
-#Hem</a>
-<a hrefa>
-<a href="#tjanster">Tjänster</Kontakt</a>
-</div>
-
-</div>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<div class="hero-label">
-Konsulttjänster
-</div>
-
-<h1>
-Teknik.<br>
-Kommunikation.<br>
-Kvalitet.<br>
-Effektivitet.
-</h1>
-
-<p>
-Jag hjälper tekniska verksamheter att utveckla kvalitet, processer och projekt genom erfarenhet från industri, förbättringsarbete och verksamhetsutveckling.
-</p>
-
-<a href="mailto:jennifer@edrellengineering.com" class="button">
-Kontakta mig
-</a>
-
-</div>
-
-</section>
-
-<section id="tjanster" class="services">
-
-<div class="services-grid">
-
-<div class="service">
-<h3>TEKNIK</h3>
-<p>Förståelse för tekniska miljöer och komplexa sammanhang.</p>
-</div>
-
-<div class="service">
-<h3>KVALITET</h3>
-<p>Strukturerade arbetssätt som skapar stabilitet och långsiktighet.</p>
-</div>
-
-<div class="service">
-<h3>PROJEKTLEDNING</h3>
-<p>Driva förändring och skapa resultat från idé till leverans.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="om" class="about">
-
-<div class="about-grid">
-
-<div class="about-image">
-<img src="ommig.jpg" alt="Jennifer">
-</div>
-
-<div>
-
-<div class="section-label">
-Om mig
-</div>
-
-<h2>
-Erfarenhet, engagemang och ett lösningsfokuserat arbetssätt.
-</h2>
-
-<p>
-Jag hjälper företag att utveckla kvalitet, processer och projekt genom ett strukturerat arbetssätt, teknisk förståelse och ett tydligt fokus på resultat.
-</p>
-
-<p>
-Målet är att skapa långsiktigt hållbara förbättringar som stärker både människor, processer och verksamhet.
-</p>
-
-#kontakt
-Kontakta mig
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="kontakt" class="cta">
-
-<div class="cta-content">
-
-<div>
-
-<h2>
-Är du nyfiken på hur jag kan hjälpa din verksamhet?
-</h2>
-
-</div>
-
-<div>
-
-<p>
-jennifer@edrellengineering.com<br>
-+46 73 952 05 16
-</p>
-
-<a href="mailto:jennifer@edrellengineering.com" class="cta-button">
-Kontakta mig
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-© 2026 Edrell Engineering AB
-</footer>
-
-</body>
-</html>
+    height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(25,32,70,0.35),
+    rgba(25,32,70,0.35)
+    ),
