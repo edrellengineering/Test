@@ -4,29 +4,410 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Edrell Engineering AB</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;color:#333}
-header{position:absolute;top:0;left:0;width:100%;z-index:10}
-.navbar{max-width:1200px;margin:auto;padding:30px 40px;display:flex;justify-content:space-between;align-items:center}
-.logo img{height:50px}.menu a{color:#fff;text-decoration:none;margin-left:30px}
-.hero{min-height:850px;background:linear-gradient(rgba(20,20,40,.4),rgba(20,20,40,.4)),url("hero.jpg");background-size:cover;background-position:center;display:flex;align-items:center}
-.hero-content{max-width:1200px;margin:auto;padding:0 40px;color:#fff}
-.hero h1{font-size:72px;font-weight:300;line-height:1.1;margin-bottom:25px}
-.hero p{max-width:600px;line-height:1.8;font-size:20px;margin-bottom:30px}
-.button{background:#fff;color:#444;padding:16px 32px;text-decoration:none;border-radius:4px;font-weight:600}
-.services{padding:100px 40px}.services-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.service{text-align:center}
-.about{padding:100px 40px;background:#f7f7f7}.about-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-image img{width:100%}.about-text h2{font-size:42px;font-weight:300;margin-bottom:20px}
-@media(max-width:900px){.menu{display:none}.hero h1{font-size:44px}.services-grid,.about-grid{grid-template-columns:1fr}}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;g:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:#333;
+background:#ffffff;
+}
+
+header{
+background:#ffffff;
+border-bottom:1px solid #efefef;
+}
+
+.navbar{
+max-width:1200px;
+margin:auto;
+padding:22px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+height:70px;
+}
+
+.menu a{
+text-decoration:none;
+color:#666;
+margin-left:30px;
+font-size:14px;
+font-weight:500;
+}
+
+.hero{
+min-height:700px;
+
+background:
+linear-gradient(
+rgba(233,220,230,0.35),
+rgba(120,100,160,0.25)
+),
+url("hero.jpg");
+
+background-size:cover;
+background-position:center right;
+
+display:flex;
+align-items:center;
+}
+
+.hero-content{
+max-width:1200px;
+margin:auto;
+width:100%;
+padding:80px 40px;
+}
+
+.hero-label{
+letter-spacing:3px;
+font-size:12px;
+color:#7d6e96;
+margin-bottom:20px;
+text-transform:uppercase;
+}
+
+.hero h1{
+font-size:72px;
+font-weight:300;
+line-height:1.05;
+max-width:650px;
+color:#2d2d2d;
+margin-bottom:25px;
+}
+
+.hero p{
+max-width:600px;
+font-size:18px;
+line-height:1.8;
+color:#444;
+margin-bottom:35px;
+}
+
+.button{
+display:inline-block;
+padding:16px 32px;
+background:#1f2840;
+color:white;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.services{
+padding:90px 40px;
+background:#ffffff;
+}
+
+.services-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+.service{
+text-align:center;
+padding:20px;
+border-right:1px solid #ececec;
+}
+
+.service:last-child{
+border-right:none;
+}
+
+.service h3{
+font-size:13px;
+letter-spacing:2px;
+margin-bottom:15px;
+color:#6f5b8c;
+}
+
+.service p{
+font-size:15px;
+line-height:1.7;
+color:#666;
+}
+
+.about{
+background:#fafafa;
+padding:100px 40px;
+}
+
+.about-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.about-image img{
+width:100%;
+border-radius:8px;
+box-shadow:0 10px 40px rgba(0,0,0,0.08);
+}
+
+.section-label{
+font-size:12px;
+letter-spacing:3px;
+color:#8d73b5;
+margin-bottom:15px;
+text-transform:uppercase;
+}
+
+.about h2{
+font-size:46px;
+font-weight:300;
+line-height:1.2;
+margin-bottom:25px;
+color:#333;
+}
+
+.about p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:25px;
+}
+
+.about-button{
+display:inline-block;
+padding:14px 26px;
+border:1px solid #cbbce0;
+text-decoration:none;
+color:#6f5b8c;
+}
+
+.cta{
+background:#1f2840;
+color:white;
+padding:110px 40px;
+}
+
+.cta-content{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.cta h2{
+font-size:48px;
+font-weight:300;
+line-height:1.2;
+}
+
+.cta p{
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.cta-button{
+display:inline-block;
+padding:16px 30px;
+background:white;
+color:#1f2840;
+text-decoration:none;
+font-weight:600;
+}
+
+footer{
+text-align:center;
+padding:35px;
+font-size:14px;
+color:#999;
+}
+
+@media(max-width:900px){
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.hero{
+min-height:600px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.service{
+border-right:none;
+border-bottom:1px solid #ececec;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+.cta-content{
+grid-template-columns:1fr;
+}
+
+.logo img{
+height:55px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
-<header><div class="navbar"><div class="logo"><img src="logotype01.jpg" alt="Logo"></div><div class="menu"><a href="#">Hem</a><a href="#om">Om</a><a href="#tjanster">Tjänster</a><a href="#kontakt">Kontakt</a></div></div></header>
-<section class="hero"><div class="hero-content"><h1>Teknik.<br>Kommunikation.<br>Kvalitet.<br>Effektivitet.</h1><p>Jag hjälper företag att utveckla kvalitet, processer och projekt genom erfarenhet från tekniska verksamheter.</p><a class="button" href="mailto:jennifer@edrellengineering.com">Kontakta mig</a></div></section>
-<section id="tjanster" class="services"><div class="services-grid"><div class="service"><h3>TEKNIK</h3><p>Förståelse för tekniska miljöer.</p></div><div class="service"><h3>KVALITET</h3><p>Struktur och förbättringsarbete.</p></div><div class="service"><h3>PROJEKTLEDNING</h3><p>Från idé till resultat.</p></div></div></section>
-<section id="om" class="about"><div class="about-grid"><div class="about-image"><img src="ommig.jpg" alt="Om mig"></div><div class="about-text"><h2>Erfarenhet, engagemang och fokus på resultat.</h2><p>Edrell Engineering AB erbjuder konsulttjänster inom kvalitet, projektledning och verksamhetsutveckling.</p></div></div></section>
-<section id="kontakt" class="services"><div style="max-width:1200px;margin:auto;text-align:center"><h2>Kontakt</h2><p>jennifer@edrellengineering.com<br>+46 73 952 05 16</p></div></section>
-</body></html>
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+<img src="logotype01.jpg" alt="Edrell Engineering">
+</div>
+
+<div class="menu">
+#Hem</a>
+<a hrefa>
+<a href="#tjanster">Tjänster</aontakt</a>
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-label">
+KONSULTTJÄNSTER
+</div>
+
+<h1>
+Teknik.<br>
+Kommunikation.<br>
+Kvalitet.<br>
+Effektivitet.
+</h1>
+
+<p>
+Jag hjälper företag att utveckla arbetssätt, kvalitet och projektledning genom erfarenhet från teknisk utveckling, processförbättring och verksamhetsutveckling.
+</p>
+
+<a class="button" href="mailto:jennifer@edrellengineering.com">
+KONTAKTA MIG
+</a>
+
+</div>
+
+</section>
+
+<section id="tjanster" class="services">
+
+<div class="services-grid">
+
+<div class="service">
+<h3>TEKNIK</h3>
+<p>Förståelse för tekniska miljöer och komplexa sammanhang.</p>
+</div>
+
+<div class="service">
+<h3>KVALITET</h3>
+<p>Strukturerade arbetssätt som skapar stabilitet och trygghet.</p>
+</div>
+
+<div class="service">
+<h3>PROJEKTLEDNING</h3>
+<p>Driva förändring och skapa resultat från idé till leverans.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="om" class="about">
+
+<div class="about-grid">
+
+<div class="about-image">
+<img src="ommig.jpg" alt="Jennifer">
+</div>
+
+<div>
+
+<div class="section-label">
+OM MIG
+</div>
+
+<h2>
+Erfarenhet, engagemang och ett lösningsfokuserat arbetssätt.
+</h2>
+
+<p>
+Jag hjälper företag att utveckla kvalitet, processer och projekt genom ett strukturerat arbetssätt, teknisk förståelse och ett starkt fokus på resultat.
+</p>
+
+<p>
+Målet är att skapa tydlighet, effektivitet och långsiktigt hållbara förbättringar i verksamheten.
+</p>
+
+#kontakt
+LÄS MER OM MIG
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="kontakt" class="cta">
+
+<div class="cta-content">
+
+<div>
+<h2>
+Är du nyfiken på hur jag kan hjälpa din verksamhet?
+</h2>
+</div>
+
+<div>
+
+<p>
+jennifer@edrellengineering.com<br>
++46 73 952 05 16
+</p>
+
+<a href="mailto:jennifer@edrellengineering.com" class="cta-button">
+KONTAKTA MIG
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Edrell Engineering AB
+</footer>
+
+</body>
+</html>
