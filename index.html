@@ -15,23 +15,112 @@ html{scroll-behavior:smooth}
 header{position:fixed;top:0;width:100%;background:rgba(250,247,243,.95);backdrop-filter:blur(8px);z-index:1000;border-bottom:1px solid #ece7e1}
 .navbar{max-width:1280px;margin:auto;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
 .logo img{height:70px}.menu{display:flex;gap:32px}.menu a{text-decoration:none;color:#4b4953;font-size:14px}
-.hero{min-height:100vh;background:linear-gradient(rgba(243,233,236,.86),rgba(180,122,154,.35)),url('hero.jpg');background-size:cover;background-position:right center;display:flex;align-items:center}
+
+  .hero{min-height:100vh;background:linear-gradient(rgba(243,233,236,.86),rgba(180,122,154,.35)),url('hero.jpg');background-size:cover;background-position:right center;display:flex;align-items:center}
 .hero-content{max-width:1280px;margin:auto;padding:190px 80px 120px;width:100%}
 .hero-tag{letter-spacing:3px;color:#B47A9A;font-size:12px;margin-bottom:18px}
 .hero h1{font-size:64px;font-weight:300;line-height:1.05;color:#2C1B2F;margin-bottom:24px;max-width:650px}.hero p{max-width:620px;line-height:1.9;font-size:19px;margin-bottom:32px;color:#4a4a4a}.btn{display:inline-block;padding:16px 30px;background:#222f49;color:#fff;text-decoration:none;border-radius:3px}
-.services{padding:100px 40px;background:#F3E9EC}.services-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:50px}.service{text-align:center}
-  .service h3{margin-bottom:12px;color:#B47A9A;letter-spacing:2px}.service p{line-height:1.8;color:#666}
-.about{padding:120px 40px;background:#FFFFFF}
+
+  .services{padding:100px 40px;background:#F3E9EC}
+  .services-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:50px}
+  .service{text-align:center}
+  .service h3{margin-bottom:12px;color:#B47A9A;letter-spacing:2px}
+  .service p{line-height:1.8;color:#666}
+
+  .about{padding:120px 40px;background:#FFFFFF}
   .about-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
   .about img{width:100%;border-radius:12px;box-shadow:0 20px 40px rgba(0,0,0,.08)}
   .label{font-size:12px;letter-spacing:3px;color:#B47A9A;margin-bottom:12px}
   .about h2{font-size:52px;font-weight:300;line-height:1.2;margin-bottom:24px}
   .about p{line-height:1.9;color:#4D4755}
+
+  <section class="value-section">
+    <div class="value-grid">
+        <div class="value-left">
+            <div class="value-label">
+                VAD JAG HJÄLPER TILL MED
+            </div>
+            <h2>
+                Stöd i förändring – från strategi till vardag.
+            </h2>
+            <ul>
+                <li>Kvalitets- och förbättringsarbete</li>
+                <li>Processutveckling och effektivisering</li>
+                <li>Projektledning och koordinering</li>
+                <li>Struktur och samordning</li>
+                <li>Verksamhetsutveckling</li>
+            </ul>
+        </div>
+        <div class="value-right">
+            <p>
+                Oavsett om det handlar om att skapa tydligare processer,
+                driva ett projekt framåt eller få ett förbättringsarbete att
+                ge verklig effekt hjälper jag verksamheter att omsätta idéer
+                till resultat.
+            </p>
+            <a href="tjanster.html" class="value-button">
+                Läs mer om mina tjänster
+            </a>
+        </div>
+    </div>
+</section>
+
+  
 .cta{background:#25304D;color:#fff;padding:80px 40px}
   .cta-wrap{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center}
   .cta h2{font-size:32px;font-weight:300}
   .cta-btn{display:inline-block;margin-top:20px;padding:16px 30px;background:#fff;color:#5E3A5C;text-decoration:none}
 footer{text-align:center;padding:30px;color:#777;background:#F3E9EC}
+  footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    background:#faf7f3;}
+.value-section{
+    background:#ffffff;
+    padding:100px 40px;}
+.value-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;}
+.value-label{
+    color:#B47A9A;
+    letter-spacing:3px;
+    font-size:12px;
+    margin-bottom:15px;}
+.value-left h2{
+    font-size:42px;
+    font-weight:300;
+    line-height:1.3;
+    color:#2C1B2F;
+    margin-bottom:30px;}
+.value-left ul{
+    list-style:none;}
+.value-left li{
+    margin-bottom:15px;
+    color:#4D4755;}
+.value-left li:before{
+    content:"✓ ";
+    color:#B47A9A;}
+.value-right p{
+    line-height:1.9;
+    color:#4D4755;
+    margin-bottom:30px;}
+.value-button{
+    display:inline-block;
+    padding:16px 30px;
+    background:#5E3A5C;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;}
+@media(max-width:900px){
+    .value-grid{
+        grid-template-columns:1fr; }
+    .value-left h2{
+        font-size:34px; }
+  }
 @media(max-width:900px){.menu{display:none}.hero h1{font-size:48px}.services-grid,.about-grid,.cta-wrap{grid-template-columns:1fr}.logo img{height:55px}}
 
 </style>
