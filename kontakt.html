@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Kontakt | Edrell Engineering AB</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>*{margin:0;padding:0;box-sizing:border-box}
-      body{font-family:Inter,sans-serif;background:#ffffff;color:#2C1B2F}
-      header{border-bottom:1px solid #ddd}
-      .navbar{max-width:1200px;margin:auto;padding:20px 40px;display:flex;justify-content:space-between}
-      .menu a{margin-left:24px;color:#2C1B2F;text-decoration:none}
-      .logo img{height:50px}
-      .wrap{max-width:900px;margin:auto;padding:70px 40px 100px;text-align:center}
-      .label{color:#B47A9A;letter-spacing:3px;font-size:12px;margin-bottom:10px}
-      h1{font-size:56px;font-weight:300;margin-bottom:25px}
-      p{line-height:2;font-size:20px}
-      .btn{display:inline-block;margin-top:25px;padding:16px 30px;background:#5E3A5C;color:#fff;text-decoration:none;border-radius:4px}
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt | Edrell Engineering AB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#fff;color:#2C1B2F}
+header{position:fixed;top:0;width:100%;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);z-index:1000;border-bottom:1px solid #ece7e1}
+.navbar{max-width:1280px;margin:auto;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
+.logo img{height:70px}.menu{display:flex;gap:32px}.menu a{text-decoration:none;color:#4b4953;font-size:14px}
+.contact-section{padding:160px 40px 100px}
+.contact-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.label{font-size:12px;letter-spacing:3px;color:#B47A9A;margin-bottom:12px}
+h1{font-size:56px;font-weight:300;color:#2C1B2F;margin-bottom:30px}
+p{line-height:1.9;color:#4D4755;margin-bottom:18px}
+.contact-image img{width:100%;border-radius:12px;box-shadow:0 20px 40px rgba(0,0,0,.08)}
+.btn{display:inline-block;margin-top:15px;padding:16px 30px;background:#25304D;color:#fff;text-decoration:none;border-radius:4px}
+.linkedin{color:#5E3A5C;font-weight:600;text-decoration:none}
+footer{text-align:center;padding:30px;color:#777;background:#F3E9EC}
+@media(max-width:900px){.menu{display:none}.contact-grid{grid-template-columns:1fr}h1{font-size:40px}.logo img{height:55px}}
+</style>
+</head>
 
-.hero-contact{
-    height:250px;
-    background:
-    linear-gradient(
-        rgba(37,48,77,0.45),
-        rgba(37,48,77,0.45)    ),
-    url('kontakt.jpg');
-    background-size:cover;
-    background-position:right center; }
-
-      
-    </style>
-  </head>
   
-  <body><header><div class="navbar">
-    <div class="logo">
-      <img src="Logo3_transparent.png">
-    </div>
-    <nav class="menu"><a href="index.html">Hem</a>
-      <a href="om.html">Om</a>
-      <a href="tjanster.html">Tjänster</a>
-      <a href="kontakt.html">Kontakt</a>
-    </nav>
+<body>
+<header><div class="navbar">
+  <div class="logo">
+    <img src="Logo3_transparent.png" alt="Edrell Engineering AB"></div>
+  <nav class="menu"><a href="index.html">Hem</a>
+    <a href="om.html">Om</a>
+    <a href="tjanster.html">Tjänster</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav></div></header>
+  
+<section class="contact-section">
+  <div class="contact-grid"><div>
+    <div class="label">KONTAKT</div>
+    <h1>Hör gärna av dig</h1>
+    <p>Har du ett behov eller vill du diskutera ett kommande uppdrag?</p>
+    <p>Behöver ni stöd inom projektledning, koordinering, kvalitet eller verksamhetsutveckling?</p>
+    <p>Hör gärna av dig för ett första samtal om verksamhetens behov och hur Edrell Engineering AB kan bidra.</p>
+    <p><strong>Jennifer Edrell</strong><br>Edrell Engineering AB</p>
+    <p>E-post: jennifer@edrellengineering.com<br>Telefon: +46 73 952 05 16</p>
+    <p>Du är också välkommen att kontakta mig via LinkedIn.</p>
+    <p><a class="linkedin" href="https://www.linkedin.com/in/jennifer-friberg-edrell-a83563b6/?isSelfProfile=true">LinkedIn</a>
+    </p>
+    <a class="btn" href="mailto:jennifer@edrellengineering.com">Skicka e-post</a>
   </div>
-  </header>
-
-<section class="hero-contact"></section>
-
-    
-    <div class="wrap">
-<div class="label">KONTAKT</div>
-<h1>Hör gärna av dig</h1>
-<p>Har du ett behov eller vill du diskutera ett kommande uppdrag?</p>
-<p>Behöver ni stöd inom projektledning, koordinering, kvalitet eller verksamhetsutveckling?</p>
-<p>Hör gärna av dig för ett första samtal om verksamhetens behov och hur Edrell Engineering AB kan bidra.</p>
-<br>
-
-<p><strong>Jennifer Edrell</strong><br>Edrell Engineering AB</p>
-
-<p>E-post: jennifer@edrellengineering.com<br>
-Telefon: +46 73 952 05 16</p>
-
-<p>Du är också välkommen att kontakta mig via LinkedIn.</p>
-
-<a class="btn" href="mailto:jennifer@edrellengineering.com">
-    Skicka e-post
-</a>
-      
-</div></body></html>
+    <div class="contact-image"><img src="kontakt.jpg" alt="Kontakt"></div></div>
+</section>
+  
+  <footer>© Edrell Engineering AB</footer></body></html>
