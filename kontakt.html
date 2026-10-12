@@ -9,10 +9,44 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:#fff;color:#2C1B2F}
-header{position:fixed;top:0;width:100%;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);z-index:1000;border-bottom:1px solid #ece7e1}
-.navbar{max-width:1200px;margin:auto;padding:20px 40px;display:flex;justify-content:space-between;align-items:center}
-.logo img{height:50px}.menu{display:flex;gap:32px}.menu a{text-decoration:none;color:#4b4953;font-size:14px}
+body{
+    font-family:Inter,sans-serif;
+    background:#fff;
+    color:#2C1B2F;
+}
+
+header{
+    border-bottom:1px solid #ddd;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.menu a{
+    margin-left:24px;
+    text-decoration:none;
+    color:#2C1B2F;
+}
+
+.logo img{
+    height:50px;
+}
+    .hero-band{
+    height:50px;
+    background:#25304D;
+    display:flex;
+    align-items:center;
+    padding-left:40px;
+    color:#fff;
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:600;
+}
 .contact-hero{
     margin-top:120px;
     height:50px;
@@ -42,8 +76,10 @@ footer{text-align:center;padding:30px;color:#777;background:#F3E9EC}
 <body>
 <header><div class="navbar"><div class="logo"><img src="Logo3_transparent.png" alt="Edrell Engineering AB"></div>
     <nav class="menu"><a href="index.html">Hem</a><a href="om.html">Om</a><a href="tjanster.html">Tjänster</a><a href="kontakt.html">Kontakt</a></nav></div></header>
-<section class="contact-hero">
+
+    <section class="hero-band">
     KONTAKT
 </section>
+    
 <section class="contact-section"><div class="contact-grid"><div>
   <h1>Hör gärna av dig</h1><p>Har du ett behov eller vill du diskutera ett kommande uppdrag?</p><p>Behöver ni stöd inom projektledning, koordinering, kvalitet eller verksamhetsutveckling?</p><p>Hör gärna av dig för ett första samtal om verksamhetens behov och hur Edrell Engineering AB kan bidra.</p><p><strong>Jennifer Edrell</strong><br>Edrell Engineering AB</p><p>E-post: jennifer@edrellengineering.com<br>Telefon: +46 73 952 05 16</p><p>Du är också välkommen att kontakta mig via LinkedIn.</p><p><a class="linkedin" href="https://www.linkedin.com/in/jennifer-friberg-edrell-a83563b6/" target="_blank">LinkedIn</a></p><a class="btn" href="mailto:jennifer@edrellengineering.com">Skicka e-post</a></div><div class="contact-image"><img src="kontakt.jpg" alt="Kontakt"></div></div></section><footer>© Edrell Engineering AB</footer></body></html>
