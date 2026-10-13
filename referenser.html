@@ -3,43 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Referenser | Edrell Engineering AB</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body{font-family:Inter,sans-serif;background:#f3e9ec;color:#2c1b2f;margin:0}
-.container{max-width:1100px;margin:auto;padding:80px 40px}
-h1{font-size:56px;font-weight:300;margin-bottom:20px}
-.lead{font-size:20px;line-height:1.8;max-width:800px;margin-bottom:60px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
-.card{background:#fff;padding:35px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.05)}
-.card h3{color:#b47a9a;letter-spacing:2px;font-size:14px;margin-bottom:15px}
-.card p{line-height:1.8;color:#4d4755}
-.note{margin-top:50px;padding:25px;background:#fff;border-left:4px solid #b47a9a}
-a{color:#5e3a5c}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:#fff;
+    color:#2C1B2F;
+}
+
+header{
+    border-bottom:1px solid #ece7e1;
+    background:rgba(250,247,243,.95);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo img{
+    height:50px;
+    filter:saturate(70%);
+}
+
+.menu a{
+    margin-left:24px;
+    text-decoration:none;
+    color:#2C1B2F;
+}
+
+.hero-band{
+    height:50px;
+    background:#25304D;
+    display:flex;
+    align-items:center;
+    padding-left:40px;
+    color:#fff;
+    letter-spacing:3px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:80px 40px;
+}
+
+h1{
+    font-size:56px;
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.intro{
+    max-width:800px;
+    line-height:1.9;
+    color:#4D4755;
+    margin-bottom:60px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    border-left:4px solid #5E3A5C;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.card h2{
+    color:#5E3A5C;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.9;
+    color:#4D4755;
+}
+
+.note{
+    margin-top:50px;
+    padding:30px;
+    background:#F3E9EC;
+    border-left:4px solid #B47A9A;
+    border-radius:8px;
+}
+
+.footer{
+    background:#25304D;
+    color:#fff;
+    padding:50px 40px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+}
+
+.copyright{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    background:#F3E9EC;
+}
+
+@media(max-width:900px){
+
+    h1{
+        font-size:40px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu a{
+        margin:0 10px;
+    }
+}
+
 </style>
 </head>
+
 <body>
-<div class="container">
-<h1>Referenser & Uppdrag</h1>
-<p class="lead">Exempel på områden där Edrell Engineering AB har bidragit med struktur, kvalitet, projektledning och verksamhetsutveckling.</p>
-<div class="grid">
-<div class="card">
-<h3>KVALITETSUTVECKLING</h3>
-<p>Utveckling av arbetssätt, processer och kvalitetsrutiner för att skapa tydlighet, stabilitet och långsiktiga förbättringar.</p>
+
+<header>
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="Logo3_transparent.png" alt="Edrell Engineering AB">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Hem</a>
+            <a href="om.html">Om</a>
+            <a href="tjanster.html">Tjänster</a>
+            <a href="referenser.html">Referenser</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero-band">
+    REFERENSER
+</section>
+
+<div class="wrap">
+
+    <h1>Exempel på uppdrag och erfarenhetsområden</h1>
+
+    <p class="intro">
+        Edrell Engineering har erfarenhet från uppdrag inom teknik,
+        projektledning, kvalitet och verksamhetsutveckling.
+        Nedan följer exempel på områden där stöd har bidragit till
+        struktur, samordning och förbättring.
+    </p>
+
+    <div class="card">
+        <h2>Teknik och industri</h2>
+
+        <p>
+            Erfarenhet från tekniska verksamheter, produktutveckling,
+            mekanikkonstruktion och industriella miljöer där flera funktioner
+            behöver samverka för att skapa effektiva arbetssätt och nå gemensamma mål.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Projektledning och koordinering</h2>
+
+        <p>
+            Planering, samordning och uppföljning av projekt och aktiviteter
+            med fokus på framdrift, kommunikation och tydliga ansvarsförhållanden.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Kvalitet och verksamhetsutveckling</h2>
+
+        <p>
+            Utveckling av processer, arbetssätt och strukturer som bidrar
+            till högre kvalitet, effektivare samarbete och långsiktigt hållbara resultat.
+        </p>
+    </div>
+
+    <div class="note">
+        <strong>Referenser lämnas gärna på begäran.</strong>
+        <br><br>
+        Med hänsyn till sekretess och kundrelationer publiceras inte detaljerade kunduppgifter på webbplatsen.
+    </div>
+
 </div>
-<div class="card">
-<h3>PROJEKTLEDNING</h3>
-<p>Planering, koordinering och genomförande av projekt med fokus på leverans, kommunikation och uppföljning.</p>
-</div>
-<div class="card">
-<h3>VERKSAMHETSUTVECKLING</h3>
-<p>Identifiering av förbättringsområden och införande av strukturerade arbetssätt som stärker verksamhetens effektivitet.</p>
-</div>
-</div>
-<div class="note">
-<strong>Referenser lämnas gärna på begäran.</strong><br><br>
-Med hänsyn till sekretess och kundrelationer publiceras inte detaljerade kunduppgifter på webbplatsen.
-</div>
-</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h3>Edrell Engineering AB</h3>
+        <p>Jennifer Friberg Edrell</p>
+        <p>Kumla, Sverige</p>
+    </div>
+</footer>
+
+<footer class="copyright">
+    © Edrell Engineering AB
+</footer>
+
 </body>
 </html>
