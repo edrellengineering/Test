@@ -128,8 +128,65 @@ footer{
     .value-left h2{
         font-size:34px; }
   }
-@media(max-width:900px){.menu{display:none}.hero h1{font-size:48px}.services-grid,.about-grid,.cta-wrap{grid-template-columns:1fr}.logo img{height:55px}}
+@media(max-width:900px).hero h1{font-size:48px}.services-grid,.about-grid,.cta-wrap{grid-template-columns:1fr}.logo img{height:55px}}
+@media(max-width:900px){
 
+  /* --- HEADER --- */
+  .navbar{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:15px 20px;
+  }
+
+  .menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+    margin-top:10px;
+  }
+
+  .menu a{
+    font-size:13px;
+  }
+
+  /* --- HERO --- */
+  .hero-content{
+    padding:140px 20px 80px;
+  }
+
+  .hero h1{
+    font-size:42px;
+    line-height:1.2;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  /* --- GRID-SEKTIONER --- */
+  .services-grid,
+  .about-grid,
+  .cta-wrap,
+  .value-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  /* --- TEXT & PADDING --- */
+  .services,
+  .about,
+  .value-section,
+  .cta{
+    padding:60px 20px;
+  }
+
+  /* --- FOOTER --- */
+  footer{
+    padding:20px;
+    font-size:13px;
+  }
+}
 </style>
 </head>
   
