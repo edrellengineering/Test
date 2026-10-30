@@ -20,13 +20,20 @@
 
 body{
     font-family:Inter,sans-serif;
-    background:#fff;
+    background:#F3E9EC;
     color:#2C1B2F;
 }
-
+body{
+    padding-top:120px;
+}
 header{
-    border-bottom:1px solid #ece7e1;
+    position:fixed;
+    top:0;
+    width:100%;
     background:rgba(250,247,243,.95);
+    backdrop-filter:blur(8px);
+    z-index:1000;
+    border-bottom:1px solid #ece7e1;
 }
 
 .navbar{
@@ -35,17 +42,21 @@ header{
     padding:20px 40px;
     display:flex;
     justify-content:space-between;
+      align-items:center;
 }
 
 .logo img{
     height:50px;
     filter:saturate(70%);
 }
-
+.menu{
+    display:flex;
+    gap:24px;
+}
 .menu a{
-    margin-left:24px;
     text-decoration:none;
-    color:#2C1B2F;
+    color:#4b4953;
+    font-size:14px;
 }
 
 .hero-band{
